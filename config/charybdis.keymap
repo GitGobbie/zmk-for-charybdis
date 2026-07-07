@@ -93,6 +93,17 @@
         };
     };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <54 55>;
+            bindings = <&mkp MB3>;
+        };
+    };
+};
+
     keymap {
         compatible = "zmk,keymap";
 
