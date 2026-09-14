@@ -127,11 +127,11 @@
 
         layer_1 {
             bindings = <
-&kp F1          &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7     &kp F8    &kp F9            &kp F10            &kp F11  &kp F12
-&kp CAPS        &none            &none            &none            &none            &none         &none      &none     &kp UP            &none              &none    &none
-&kp LEFT_SHIFT  &none            &none            &none            &bt BT_NXT       &bt BT_CLR    &none      &kp LEFT  &kp DOWN          &kp RIGHT          &none    &none
-&kp LCTRL       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none         &none      &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none    &kp EQUAL
-                                 &to 0            &kp SPACE        &kp LEFT_ALT     &kp ENTER        &none
+&kp F1          &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7     &kp F8     &kp F9            &kp F10            &kp F11     &kp F12
+&kp CAPS        &trans           &trans           &trans           &trans           &trans        &trans     &kp UP     &trans            &trans             &trans      &kp TILDE
+&kp LEFT_SHIFT  &trans           &trans           &trans           &bt BT_NXT       &bt BT_CLR    &kp LEFT   &kp DOWN   &kp RIGHT         &trans             &trans      &trans
+&kp LCTRL       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans        &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH    &kp EQUAL
+                                 &to 0            &kp SPACE        &kp LEFT_ALT     &kp ENTER     &trans
                                                   &mkp MB1         &mkp MB2         &kp LWIN
             >;
             sensor-bindings =
@@ -144,8 +144,8 @@
         layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &none     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &none     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
@@ -242,12 +242,12 @@
 
         /* layer_2 {
             bindings = <
-&none  &none   &none    &none   &none         &none         &kp N1         &none         &none     &none  &none   &to 0
-&none  &none   &none    &none   &none         &none         &none         &none          &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
-&none  &none   &none    &none   &none         &none         &none         &mkp LCLK     &mkp RCLK  &none  &none   &none
-&none  &none   &none    &none   &bt BT_NXT  &bt BT_CLR    &none         &none         &none     &none  &none   &none
-                                   &none         &none         &none         &none         &none
-                                                 &none         &none         &none
+&trans  &trans   &trans    &trans   &trans         &trans         &kp N1         &trans         &trans     &trans  &trans   &to 0
+&trans  &trans   &trans    &trans   &trans         &trans         &trans         &trans          &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
+&trans  &trans   &trans    &trans   &trans         &trans         &trans         &mkp LCLK     &mkp RCLK  &trans  &trans   &trans
+&trans  &trans   &trans    &trans   &bt BT_NXT  &bt BT_CLR    &trans         &trans         &trans     &trans  &trans   &trans
+                                   &trans         &trans         &trans         &trans         &trans
+                                                 &trans         &trans         &trans
             >;
        
             
@@ -255,12 +255,12 @@
 
        Mouse {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &trans        &trans        &mkp MCLK     &trans     &none         &none       &trans     &mkp MCLK     &trans        &trans        &none
+&trans        &trans         &trans         &trans         &trans      &trans         &trans       &trans      &trans         &trans         &trans         &trans
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &trans      &bt BT_CLR    &bt BT_CLR  &trans      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans
+&trans        &trans        &trans        &mkp MCLK     &trans     &trans         &trans       &trans     &mkp MCLK     &trans        &trans        &trans
 &bootloader  &trans        &mkp RCLK     &mo 4         &mkp LCLK  &mo 5         &mo 5       &mkp LCLK  &mo 4         &mkp RCLK     &trans        &bootloader
                                          &mo 5         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &trans        &trans
+                                                       &trans      &trans        &trans
             >;
 
             
